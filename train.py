@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 # 1. Charger les données
-df = pd.read_csv("data/imdb_balanced_10k.csv")
+df = pd.read_csv("data/imdb_top_500.csv")
 X = df["text"].values
 y = df["label"].values
 
