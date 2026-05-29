@@ -35,7 +35,7 @@ jobs:
           from huggingface_hub import HfApi
 
           token = os.environ["HF_TOKEN"]
-          repo_id = "anas-isarti/imdb-sentiment-nn"  # ← change ici
+          repo_id = "anasetutc/imdb-sentiment-nn-ML01"  # ← change ici
           api = HfApi()
 
           api.create_repo(repo_id, token=token, exist_ok=True)
