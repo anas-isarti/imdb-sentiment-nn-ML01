@@ -10,8 +10,8 @@ from sklearn.preprocessing import LabelEncoder
 
 # 1. Charger les données
 df = pd.read_csv("data/imdb_balanced_10k.csv")
-X = df["review"].values
-y = (df["sentiment"] == "positive").astype(int).values
+X = df["text"].values
+y = df["label"].values
 
 # 2. TF-IDF vectorization
 vectorizer = TfidfVectorizer(max_features=5000)
